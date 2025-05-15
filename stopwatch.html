@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop watch</title>
+    <link rel="stylesheet" href="stopwatch.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>STOP WATCH</h1>
+      <div id="display-format">00:00:00</div>
+      <div class="button">
+        <button onclick="startTimer()">START</button>
+        <button onclick="pauseTimer()">PAUSE</button>
+        <button onclick="resetTimer()">RESET</button>
+        <button onclick="lapTimer()">LAP</button>
+      </div>
+      <div id="lap-container">
+        <ul id="lap"></ul>
+      </div>
+    </div>
+    <audio id="beep" src="Beep.mp3.wav" preload="auto" loop></audio>
+
+    <script src="stopwatch.js"></script>
+  </body>
+</html>
